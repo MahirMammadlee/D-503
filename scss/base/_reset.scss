@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $secondary-font;
+    color: $gray-color;
+    background-color: $light-color;
+}
+
+section {
+    margin-bottom: 8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@for $i from 1 through 6 {
+    h#{$i}, a {
+        font-family: $primary-font;
+        text-transform: uppercase;
+    }
+}
+
+h2 {
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+
+a {
+    color: $light-color;
+    text-decoration: none;
+}
+
+p {
+    font-family: $secondary-font;
+    font-size: 1.3rem;
+    letter-spacing: .5px;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 114rem;
+    margin: 0 auto;
+}

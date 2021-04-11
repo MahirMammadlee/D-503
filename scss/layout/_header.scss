@@ -1,0 +1,119 @@
+.top-header {
+    border-bottom: 1px solid $primary-color;
+
+    .container {
+        @include flex-display(flex,center,space-between);
+        
+        .logo {
+            
+            h1 {
+                font-size: 5rem;
+                color: $primary-color;
+            }
+        }
+
+        .top-social {
+            display: flex;
+
+            li {
+                margin: 0 1rem;
+                padding: 1rem;
+
+                a {
+                    font-size: 2rem;
+                    transition: all .3s;
+                }
+    
+                &:hover a {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .account {
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+.nav-header {
+
+    .navbar {
+        @include flex-display(flex,center,space-between);
+
+        .navbar-list {
+            display: flex;
+
+            .nav-item {
+                position: relative;
+                line-height: 6rem;
+                transition: all .5s;
+
+                .dropdown {
+                    position: absolute;
+                    background-color: lighten($secondary-color,10%);
+                    width: 100%;
+                    left: 0;
+                    z-index: 10;
+                    top: 12rem;
+                    transition: all .5s;
+                    opacity: 0;
+                    visibility: hidden;
+
+                    .drop-nav-item {
+                        line-height: 4rem;
+
+                        &:hover {
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: $primary-color;
+
+                    & .dropdown {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 6rem;
+                    }
+                }
+            }
+
+            a {
+                padding: 0 2rem;
+                font-size: 1.6rem;
+                letter-spacing: 2px;
+            }
+
+            span {
+                color: $light-color;
+                font-size: 1.6rem;
+                margin-right: 2rem;
+            }
+        }
+
+        .search {
+
+            & input, button {
+                background: transparent;
+                border: none;
+                outline: none;
+                color: $light-color;
+            }
+
+            & input {
+                border-bottom: 1px solid $primary-color;
+                padding: .5rem;
+            }
+
+            & button {
+                margin-left: -5rem;
+            }
+        }
+    }
+}
+

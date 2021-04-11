@@ -1,0 +1,43 @@
+.review {
+    padding: 4rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-left: 10rem;
+
+    &-title {
+        color: $primary-color;
+    }
+
+    &-tags {
+        color: $light-color;
+    }
+
+    &-text {
+        
+        a {
+            font-family: $secondary-font;
+            text-transform: lowercase;
+        }
+    }
+
+    &-user {
+        width: 38rem;
+        @include flex-display(flex, center, space-between);
+        margin-top: 2rem;
+
+        img {
+            width: 8rem;
+            border-radius: 50%;
+        }
+
+        &-name {
+            color: $primary-color;
+            font-family: $primary-font;
+        }
+
+        &-date {
+            color: $date-color;
+            font-family: $primary-font;
+        }
+    }
+}
