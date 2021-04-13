@@ -560,43 +560,26 @@ ul {
 }
 
 .recent-games-content .recent-game-1 {
-  grid-row: 1;
-  -ms-grid-row: 1;
-  grid-column: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: item-1;
 }
 
 .recent-games-content .recent-game-2 {
-  grid-row: 1;
-  -ms-grid-row: 1;
-  grid-column: 4;
-  -ms-grid-column: 4;
   grid-area: item-2;
 }
 
 .recent-games-content .recent-game-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: item-3;
 }
 
 .recent-games-content .recent-game-4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: item-4;
 }
 
 .recent-games-content .recent-game-5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: item-5;
 }
 
 .recent-games-content .recent-game-6 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
   grid-area: item-6;
 }
 
