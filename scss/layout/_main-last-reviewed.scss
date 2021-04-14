@@ -9,7 +9,7 @@
 
     &-image {
         flex-basis: 60%;
-        background-image: linear-gradient(to right bottom, rgba($primary-color,1), rgba($primary-color,.1)),url("./../../img/game_3.jpg");
+        background-image: linear-gradient(to right bottom, rgba($primary-color,1), rgba($primary-color,.1)),url("./../img/game_3.jpg");
         background-size: cover;
         height: 100%;
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);

@@ -808,8 +808,8 @@ ul {
 .last-reviewed-image {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#e51515), to(rgba(229, 21, 21, 0.1))), url("./../../img/game_3.jpg");
-  background-image: linear-gradient(to right bottom, #e51515, rgba(229, 21, 21, 0.1)), url("./../../img/game_3.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#e51515), to(rgba(229, 21, 21, 0.1))), url("./../img/game_3.jpg");
+  background-image: linear-gradient(to right bottom, #e51515, rgba(229, 21, 21, 0.1)), url("./../img/game_3.jpg");
   background-size: cover;
   height: 100%;
   -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
@@ -938,7 +938,7 @@ ul {
 
 .contact {
   padding-top: 10rem;
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%), url("./../../img/contact.jpg");
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%), url("./../img/contact.jpg");
   background-size: cover;
   min-height: 100vh;
   padding-bottom: 25rem;
