@@ -6,14 +6,19 @@
 @import "base/typography";
 
 @import "components/button";
+@import "components/crousel";
+@import "components/gallery";
 @import "components/rating";
 @import "components/review";
+@import "components/card";
+@import "components/recent-games";
 
 @import "layout/header";
-@import "layout/crousel";
 @import "layout/main-slider";
-@import "layout/main-recent-games";
 @import "layout/main-last-reviewed";
+@import "layout/showcase";
+@import "layout/team";
+@import "layout/footer";
 
 // @import "pages/";
 

@@ -13,6 +13,18 @@
     }
 }
 
+.m-1 {
+    margin: 1rem;
+}
+
 .checked {
     color: $primary-color;
+}
+
+.section-title {
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+    }
 }

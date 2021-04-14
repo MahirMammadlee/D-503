@@ -1,0 +1,152 @@
+.recent-games {
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); //1fr 1fr 1fr 1fr kimi də yazmaq olar
+        grid-template-rows: auto;
+        column-gap: 4rem;
+        row-gap: 4rem;
+        grid-template-areas: "item-1 item-1 item-1 item-2"
+                             "item-3 item-4 item-5 item-6";
+
+        .recent-game-featured {
+            @include flex-display(flex, center, space-between);
+            .recent-game-thumbnail {
+                height: 100%;
+
+                .rating {
+                    width: 5rem;
+                    height: 5rem;
+                    line-height: 5rem;
+                    font-size: 2rem;
+                    opacity: 0;
+                    transition: all .5s;
+                }
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .game-title a {
+                font-size: 3rem;
+            }
+
+            .game-date, .game-comment {
+                font-size: 1.2rem;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+
+        
+        .recent-game {
+            width: 100%;
+            height: 100%;
+            background-color: $secondary-color;
+
+            &-thumbnail {
+                position: relative;
+                overflow: hidden;
+    
+                img {
+                   width: 100%;
+                   transition: all .5s; 
+                }
+    
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    content: "";
+                    background-color: rgba($primary-color, .6);
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .5s;
+                }
+            }
+
+            &:hover, &:focus {
+
+                .recent-game-thumbnail {
+
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                    img {
+                        transform: scale(1.2) rotate(5deg);
+                        transition: all 1s;
+                    }
+
+                    .rating {
+                        opacity: 1;
+                        transition: all .5s;
+                    }
+                }
+            }
+
+            &-content {
+                padding: 2rem;
+
+                .game-title {
+                    margin-bottom: 1.2rem;
+
+                    & a {
+                        color: $primary-color;
+                        transition: all .5s;
+
+                        &:hover {
+                            color: darken($primary-color, 20%);
+                        }
+                    }
+                }
+            }
+
+            .game-meta {
+                @include flex-display(flex, center, space-between);
+
+                .game-date {
+                    color: $date-color;
+                    transition: all .5s;
+
+                    &:hover {
+                        color: darken($date-color, 20%);
+                    }
+                }
+
+                .game-comment {
+
+                    &:hover {
+                        color: darken($light-color, 20%);
+                    }
+                }
+            }
+        }
+
+        .recent-game-1 {
+            grid-area: item-1;
+        }
+        .recent-game-2 {
+            grid-area: item-2;
+        }
+        .recent-game-3 {
+            grid-area: item-3;
+        }
+        .recent-game-4 {
+            grid-area: item-4;
+        }
+        .recent-game-5 {
+            grid-area: item-5;
+        }
+        .recent-game-6 {
+            grid-area: item-6;
+        }
+    }
+}
