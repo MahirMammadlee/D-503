@@ -36,7 +36,6 @@
           box-sizing: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -194,11 +193,8 @@ ul {
 }
 
 .gallery {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (20rem)[3];
       grid-template-rows: repeat(3, 20rem);
   gap: 1rem;
 }
@@ -210,62 +206,42 @@ ul {
 }
 
 .gallery-item-1 {
-  -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 1;
   grid-row: 1;
 }
 
 .gallery-item-2 {
-  -ms-grid-column: 2;
   grid-column: 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
 }
 
 .gallery-item-3 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
   grid-column: 3 / span 2;
-  -ms-grid-row: 1;
   grid-row: 1;
 }
 
 .gallery-item-4 {
-  -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 2;
   grid-row: 2;
 }
 
 .gallery-item-5 {
-  -ms-grid-column: 3;
   grid-column: 3;
-  -ms-grid-row: 2;
   grid-row: 2;
 }
 
 .gallery-item-6 {
-  -ms-grid-column: 4;
   grid-column: 4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
   grid-row: 2 / span 2;
 }
 
 .gallery-item-7 {
-  -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 3;
   grid-row: 3;
 }
 
 .gallery-item-8 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-column: 2 / span 2;
-  -ms-grid-row: 3;
   grid-row: 3;
 }
 
@@ -299,7 +275,6 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -351,13 +326,10 @@ ul {
 .review-user {
   width: 38rem;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 2rem;
 }
@@ -443,27 +415,22 @@ ul {
 }
 
 .recent-games-content {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: auto;
       grid-template-rows: auto;
   -webkit-column-gap: 4rem;
           column-gap: 4rem;
   row-gap: 4rem;
-      grid-template-areas: "item-1 item-1 item-1 item-2" "item-3 item-4 item-5 item-6";
+      grid-template-areas: "item-1 item-1 item-1 item-2"
+ "item-3 item-4 item-5 item-6";
 }
 
 .recent-games-content .recent-game-featured {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
@@ -567,13 +534,10 @@ ul {
 
 .recent-games-content .recent-game .game-meta {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
@@ -592,39 +556,26 @@ ul {
 }
 
 .recent-games-content .recent-game-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: item-1;
 }
 
 .recent-games-content .recent-game-2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: item-2;
 }
 
 .recent-games-content .recent-game-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: item-3;
 }
 
 .recent-games-content .recent-game-4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: item-4;
 }
 
 .recent-games-content .recent-game-5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: item-5;
 }
 
 .recent-games-content .recent-game-6 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
   grid-area: item-6;
 }
 
@@ -634,13 +585,10 @@ ul {
 
 .top-header .container {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
@@ -651,7 +599,6 @@ ul {
 
 .top-header .container .top-social {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -676,19 +623,15 @@ ul {
 
 .nav-header .navbar {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .nav-header .navbar .navbar-list {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -792,25 +735,20 @@ ul {
 
 .last-reviewed {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
   height: 40vh;
   background-color: #14151A;
 }
 
 .last-reviewed-detail {
-  -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
 
 .last-reviewed-image {
-  -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#e51515), to(rgba(229, 21, 21, 0.1))), url("./../img/game_3.jpg");
   background-image: linear-gradient(to right bottom, #e51515, rgba(229, 21, 21, 0.1)), url("./../img/game_3.jpg");
@@ -827,7 +765,6 @@ ul {
 
 .showcase-content {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
@@ -918,7 +855,6 @@ ul {
 
 .team-members {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -951,10 +887,8 @@ ul {
 
 .contact-content {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   padding-top: 5rem;
 }
@@ -962,24 +896,19 @@ ul {
 .contact-content-detail {
   background: rgba(229, 21, 21, 0.8);
   -webkit-box-flex: 1;
-      -ms-flex: 1;
           flex: 1;
   color: #FEFEFE;
   min-height: 40rem;
   margin-right: -5rem;
   z-index: 5;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
           flex-direction: column;
   padding: 4rem;
 }
@@ -991,13 +920,10 @@ ul {
 
 .contact-content-detail ul li {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: default;
-      -ms-flex-pack: default;
           justify-content: default;
   margin-bottom: 3rem;
 }
@@ -1017,34 +943,26 @@ ul {
 .contact-content-form {
   background: rgba(20, 21, 26, 0.6);
   -webkit-box-flex: 2;
-      -ms-flex: 2;
           flex: 2;
   min-height: 50rem;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: default;
-      -ms-flex-pack: default;
           justify-content: default;
 }
 
 .contact-content-form form {
   width: 100%;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: default;
-      -ms-flex-pack: default;
           justify-content: default;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
           flex-direction: column;
   color: #FEFEFE;
   padding: 4rem;
@@ -1069,14 +987,6 @@ ul {
 }
 
 .contact-content-form form ::-webkit-input-placeholder {
-  text-transform: uppercase;
-}
-
-.contact-content-form form :-ms-input-placeholder {
-  text-transform: uppercase;
-}
-
-.contact-content-form form ::-ms-input-placeholder {
   text-transform: uppercase;
 }
 
@@ -1114,10 +1024,8 @@ ul {
 
 .contact .copyright .container {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
